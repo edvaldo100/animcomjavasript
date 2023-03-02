@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMAÇÃO COM JAVASCRIPT</title>
+ </head>
+    <style> 
+    .bau{
+        width: 120px;
+        height: 120px;
+        background-color: darkorange;
+        margin-left: 0;
+    } 
+    .mexerEsquerda{
+        transition: 1;
+        margin-left: 150px;
+        margin-top: 40px;
+        background-color: black;
+    }   
+    </style>
+<body>
+    <div class="bau"></div>
+
+    <script>
+       var bau = document.querySelectorAll('.bau')[0]
+
+       /*setTimeout(() =>{
+        bau.classList.add('mexerEsquerda')
+       },1000)*/
+
+       bau.addEventListener('click', () =>{
+        bau.classList.add('mexerEsquerda');
+       })
+    </script>
+</body>
+</html>
